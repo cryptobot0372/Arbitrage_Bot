@@ -32,6 +32,10 @@ def find_triangular_arbitrage():
         message = f"Знайдено арбітраж! Прибуток: {profit}%"
         asyncio.run(send_telegram_message(message))
 
-while True:
+async def main():
+    while True:
     find_triangular_arbitrage()
-    time.sleep(10)  # Запускаємо перевірку кожні 10 секунд
+    await asyncio.sleep(10)  # Запускаємо перевірку кожні 10 секунд
+
+if __name__ == "__main__":
+    asyncio.run(main())
