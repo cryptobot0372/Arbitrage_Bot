@@ -10,6 +10,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
+#Перевіряємо, чи 
 # Підключаємо Binance API
 client = Client(API_KEY, SECRET_KEY)
 
