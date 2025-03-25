@@ -30,7 +30,7 @@ def find_triangular_arbitrage():
     profit = 1.5  # Припустимо, знайшли угоду з 1.5% прибутку
     if profit > 1:
         message = f"Знайдено арбітраж! Прибуток: {profit}%"
-        asyncio.run(send_telegram_message(message))
+        await asyncio.run(send_telegram_message(message))
 
 async def main():
     while True:
